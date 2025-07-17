@@ -6205,7 +6205,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "4.7k"
 			(at 138.43 114.2999 0)
 			(effects
 				(font
@@ -6266,7 +6266,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
+		(property "MPN" "RC0603FR-074K7L"
 			(at 140.97 113.03 0)
 			(effects
 				(font
@@ -6713,7 +6713,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "100n"
 			(at 229.87 85.09 0)
 			(effects
 				(font
@@ -7144,7 +7144,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1p"
+		(property "Value" "100n"
 			(at 91.44 146.0499 0)
 			(effects
 				(font
@@ -11250,7 +11250,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "4.7k"
 			(at 128.27 114.2999 0)
 			(effects
 				(font
@@ -11311,7 +11311,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0710KL"
+		(property "MPN" "RC0603FR-074K7L"
 			(at 130.81 113.03 0)
 			(effects
 				(font
