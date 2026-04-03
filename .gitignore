@@ -33,3 +33,11 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+#LaTeX file
+*.log
+*.aux
+*.nlo
+*.out
+*.toc
+*.synctex.gz

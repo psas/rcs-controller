@@ -1,0 +1,361 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{cleveref}
+\hypersetup{hidelinks}
+\KOMAoptions{parskip=full}
+
+\newcommand{\bx}{\bm{\mathrm{x}}}
+\newcommand{\by}{\bm{\mathrm{y}}}
+
+\sisetup{
+	per-mode = fraction, % Use / for fractions (e.g., m/s)
+	product-units = power, % Use m^2 instead of m m for kg.m^2
+	inter-unit-product = \cdot, % Use \cdot for multiplication (e.g., kg⋅m)
+	output-decimal-marker = {.}, % Ensure decimal point is a dot
+	fraction-command = \frac
+}
+
+% Set page margins
+\geometry{letterpaper, left=0.75in, right=0.75in, top=1in, bottom=1in}
+
+
+\begin{document}
+
+\include{./Nomenclature}
+	
+\section{Configuration Notes}
+
+\begin{itemize}
+%	\item Using Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)
+	\item Develop software in ESP-IDF framework for best performance. Arduino is simpler, but not as well suited to high-performance applications. Andrew wants us to use Arduino for ease-of-use with future projects.
+%	\item Make sure the project name does not contain any whitespaces.
+\end{itemize}
+
+\section{Hardware Considerations}
+
+\begin{itemize}
+	\item We need to carefully select our ESP32-S3 module, as they are not all the same, and software development is affected by the choice of chip. PSRAM is extra ram which acts as pseudo static RAM. Not sure how much dynamic memory we need for the system. QD will mean Quad channel flash. Not sure how performance critical speed is for this use case.
+	\item The control-cycle times will be limited by the cycle time of the solenoid valves. Closing time of the solenoid valve will determine minimum fire time. This needs to be taken into account.
+	\item A simple test of the solenoids was run at 50-75 psi. We determined a 7.5 ms delay for the valve opening and a 60 ms delay for the valve closure. % Image available
+	\item Sensor fusion libraries are available to mitigate gyro drift from off-axis rotations.h
+	
+\end{itemize}
+
+%\section{Software Considerations}
+%
+%\begin{itemize}
+%	\item Currently uncertain, but it seems specific drivers required to connect via COM port.
+%	\item We will need a platformio.ini file:
+%	\begin{itemize}
+%		\item board\_build.flash\_mode = qio: Quad Flash typically uses DIO (Dual I/O) or QIO (Quad I/O). Check PCB’s flash chip datasheet or schematic to confirm (e.g., QIO requires four data lines wired). DIO is safer if unsure.
+%		\item upload\_port: Replace COM3 with your PCB’s serial port (find it in Device Manager on Windows or ls /dev/tty* on Linux/macOS). Leave blank for auto-detection.
+%	\end{itemize}
+%	
+%	\item The ESP32-S3 follows a multi-stage boot process, and app\_main() is invoked at the end of this sequence:
+%	\begin{itemize}
+%		\item \textbf{First-Stage Bootloader}: Loads the second-stage bootloader from flash.
+%		\item \textbf{Second-Stage Bootloader}: Initializes basic hardware (e.g., CPU, flash, RAM) and loads the application binary.
+%		\item \textbf{ESP-IDF System Initialization}:
+%		\begin{itemize}
+%			\item Initializes the ESP-IDF runtime, including the Non-Volatile Storage (NVS), FreeRTOS scheduler, and core peripherals.
+%			\item Sets up the C runtime environment (e.g., stack, heap).
+%		\end{itemize}
+%		\item \textbf{Call to app\_main()}: After system initialization, ESP-IDF calls app\_main() as the entry point for application code.
+%		\item \textbf{Key Point}: app\_main() is not the first code to run on the ESP32-S3; it’s called by ESP-IDF’s internal startup code (start\_cpu0\_default()) after the system is ready.
+%	\end{itemize}
+%	
+%	\item When writing code, \textbf{xTaskCreate} is a FreeRTOS function that creates a new task, which is a unit of execution that runs independently under the FreeRTOS real-time operating system (RTOS) scheduler, but I'm pretty sure it's the first part of the code we can or want to access.
+%
+%\end{itemize}
+
+\section{Control Theory Considerations}
+
+\begin{itemize}
+	\item Control code will be implemented in four different variants, starting with the simplest method, and building up to the most comprehensive, precise, and complex control method:
+	\begin{enumerate}
+		\item Simple on/off with deadband (this method requires no PID control code)
+		\item PID Bang-Bang 
+		\item PWM
+		\item PWM with cutoff for overshoot
+	\end{enumerate}
+	
+	\item We will need measurements for the Thrust/Force applied by the thrusters. Small variations as the tank depletes should also be measured, as this will inform how robust our control theory/code needs to be, and how to set the system gains.
+	
+	\item The PID controller computes the control input (e.g., torque \(\tau\)) based on the error: 
+	
+	\[
+	\tau(t) = k_p e(t) + k_i \int e(t)\,dt + k_d \frac{d}{dt} e(t)
+	\]
+	
+	Or:
+	
+	\[
+	\tau = k_p (\theta_{\text{des}} - \theta) + k_i \int (\theta_{\text{des}} - \theta)\,dt + k_d \frac{d}{dt} (\theta_{\text{des}} - \theta)
+	\]
+	
+	Where:
+	
+	\begin{itemize}
+		\item \(k_p\): Proportional gain (corrects based on current error). Increases \(\tau\) proportional to error.
+		\item \(k_i\): Integral gain (corrects based on accumulated error over time). Accumulates error over time, increasing \(\tau\) to eliminate persistent deviations (e.g., steady-state error due to force mismatch).
+		\item \(k_d\): Derivative gain (corrects based on the rate of change of error). Dampens the response by accounting for how fast the error is changing, preventing overshoot.
+	\end{itemize}
+	
+	\item Thrust is then calculated as \(F = \frac{\tau}{r}\). Not sure how this translates for our application, as our thrust is constant. Need to create calculation involving force and time-of-thrust.
+	
+	
+\end{itemize}
+
+\section{Important Formulas}
+RCS thrusters are constant-force, therefore, we must calculate angular acceleration based on a nominal thrust. PID's can account for small variations in the actual thrust due to pressure loss etc.
+
+\begin{align}
+	\tau &= F \cdot r \\
+	\tau &= I \cdot \ddot{\theta} = I \cdot \alpha \\
+	\implies \ddot{\theta} = \alpha &= \frac{F \cdot r}{I} = \frac{\tau}{I}\\
+	\omega = \omega_0 + \alpha t &= \omega_0 + \frac{\tau}{I} t \\
+	\Delta \omega = \alpha \cdot \Delta t &= \frac{F \cdot r}{I} \cdot \Delta t 
+\end{align}
+	
+The equation which describes the system should be:
+
+\begin{equation}
+	\ddot{\theta} = \frac{k_p}{I} e(t) + \frac{k_i}{I} \int_{0}^{t} e(t) \, dt + \frac{k_d}{I}\dot{e(t)}% + \frac{\tau_{disturb}}{I}
+\end{equation}
+
+Where \(e(t)\) represents the error \(\theta_\text{des} - \theta\). However, we are creating a system to control the thrust of the RCS system, or the applied torque, in order to control the vehicle's orientation. As such, we are actually trying to control the output torque, not an angular acceleration. This means the equation becomes:
+
+\begin{equation}
+	\tau = k_p e(t) + k_i \int_{0}^{t} e(t) \, dt + k_d \dot{e(t)}% + \frac{\tau_{disturb}}{I}
+\end{equation}
+
+Thereby allowing us to control the applied torque directly.
+
+%Check Regelungstechnik\_grundlagen.pdf, page 11, equation 2.2 for general form:
+%
+%\refstepcounter{equation}
+%\begin{align}
+%	\begin{split}
+%		\dot{x} &= A x + b u \\
+%		y &=c^\top x + d u
+%	\end{split} \tag{\theequation}
+%\end{align}
+%
+%% Variable descriptions in two centered columns using tabular
+%\begin{center}
+%	\begin{tabular}{p{0.4\textwidth} p{0.4\textwidth}}
+%		$x$: State vector $n \times 1$ & $b$: Control vector \\
+%		$u, y$: Input / Output, each scalar & $c$: Observation vector \\
+%		$A$: System matrix & $d$: Feedthrough factor \\
+%	\end{tabular}
+%\end{center}
+
+\section{Code Implementation}
+
+The calculation of the individual PID terms is done as follows:
+
+\begin{itemize}
+	
+	
+\item \textbf{The proportional term} is straightforward:
+\[
+%u_p[n] = k_p e[n]
+k_p e[n]
+\]
+This is just the current error scaled by the proportional gain. No approximation is needed since it uses the momentary error directly.
+
+
+\item \textbf{The integral term}:
+
+\[
+\int_{0}^{t} e(t) dt
+\]
+
+represents the accumulation of past errors. In discrete time, this is approximated using numerical integration, typically the rectangular or trapezoidal rule. The simplest approach is to use the rectangular rule (also called the Euler method):
+
+\[
+\int_{0}^{t} e(t) dt \approx \sum_{j=0}^{n} e[j] \Delta t
+\]
+
+In code, this is approximated by maintating a running sum of the error:
+
+\[
+\begin{aligned}
+	\text{integral[n]} &= \text{integral[n-1]} + e[n] \Delta t \\
+	u_i[n] &= k_i \cdot \text{integral[n]}
+\end{aligned}
+\]
+
+This term is reset once an acceptable steady-state is achieved, as to prevent carry-over of past errors into future control-loops when new instabilities arise.
+
+\item \textbf{The derivative term} \(\dot{e(t)}\) or \(\frac{de(t)}{dt}\) represents the rate of change of the error. In discrete time, this is approximated using the finite difference method:
+
+\[
+\frac{de(t)}{dt} \approx \frac{e[n]-e[n-1]}{\Delta t}
+\]
+
+However, this method is susceptible to "derivative" kicks when the setpoint changes suddenly. As such, the "process variable" (PV), or current measured state, can be used in place of the error, resulting in: 
+
+\[
+\frac{de(t)}{dt} \approx -\frac{\theta[n] - \theta[n-1]}{\Delta t}
+\]
+
+The negative sign accounts for the fact that an increasing PV reduces the error.
+
+\end{itemize}
+
+Turn thrusters on using PWM (current working theory/attempt). Create subroutines which check if they should be off at certain time with "time" flags. Not sure how to check if time is passed, even with interrupts. Available methods are:
+
+\begin{itemize}
+	\item \textbf{PWM:} Best for fine control when \(\Delta t\) is large enough (e.g., 50 ms) and thrusters can handle rapid cycling. Ideal for attitude control where precise torque modulation is needed.
+	\item \textbf{Threshold-Based:} Simplest, suitable for coarse control or when thruster dynamics limit rapid firing. Works well for small rockets or when stability is prioritized over precision.
+	\item \textbf{PFM:} Good for thrusters with strict minimum firing times, balancing precision and reliability. Useful for high-frequency loops (e.g., 1 kHz).
+\end{itemize}
+
+\textbf{Code execution time might vary slightly each iteration due to jitter, conditional branching, etc. Consider changing constant dt in PID control to use micros for more accurate time-deltas in PID!}
+
+
+
+\section{State Space Controllers}
+
+In space, a satellite’s rotational dynamics are governed by Euler’s equations for rigid body motion, which can be written in a state-space form:
+$$\dot{x} = Ax + Bu$$
+$$y = Cx + Du$$
+Where:
+
+$  x  $ is the state vector (e.g., angular velocities $  \omega  $ and attitude angles/quaternions).
+$  u  $ is the control input (torques from RCS thrusters or reaction wheels).
+$  y  $ is the output (measured states, like attitude or angular rates).
+$  A  $, $  B  $, $  C  $, and $  D  $ are the system matrices. \\ \\
+
+
+Moving to state space controllers to account for both position and velocity simultaneously.
+
+The gain matrix $ K $ is always $ m \times n $, where:
+
+$ m $: Number of control inputs (e.g., number of thrusters). \\
+$ n $: Number of states (e.g., total number of variables like angles and rates across all axes).
+
+As with most mechanical systems, D matrix is zero as our output affects the acceleration, and does not immediately affect the state y(t)
+
+System is overdamped when using only real poles for the gain matrix, which we will use as the system has no "spring" term.\\
+
+Standard state space equations are:
+
+\begin{align}
+	\dot \bx &= A \bx + B u \label{eq:xab}\\
+	\by &= C \bx + D u \\
+	\bx_1 &= x(t)	\\
+	\bx_2 &= \dot \bx_1 = \dot x(t) \\
+	u_1 &= u(t)
+\end{align}
+
+with \(\bx\) in the state space equations being the state vector:
+
+\[
+\bx = 
+\begin{bmatrix}
+	\theta \\ \dot \theta
+\end{bmatrix}
+=
+\begin{bmatrix}
+	\theta \\ \omega
+\end{bmatrix}
+\implies
+\dot \bx = 
+\begin{bmatrix}
+	\dot \theta \\ \ddot \theta
+\end{bmatrix} 
+= 
+\begin{bmatrix}
+	\dot \theta \\ \dot \omega
+\end{bmatrix}
+\]
+
+These can also be defined in terms of \(\bx_1\) and \(\bx_2\):
+
+\[
+\bx = 
+\begin{bmatrix}
+	\bx_1\ \\ \bx_2
+\end{bmatrix}
+\implies
+\dot \bx = 
+\begin{bmatrix}
+	\dot \bx_1\ \\ \dot \bx_2
+\end{bmatrix}
+\]
+
+In this case, \(u(t)\) is equal to our input torque, \(\tau\). Therefore, the system is defined as:
+
+\[
+\omega = \omega_0 + \frac{u(t)}{I} t = \omega_0 + \frac{\tau}{I} t
+\]
+
+which means: 
+
+\[
+\dot \omega = \frac{d\omega}{dt} = \frac{\tau}{I} \implies I \frac{d\omega}{dt} = \tau
+\]
+
+This very simple differential equation is the basis for our state space representation. If we incorporate friction, we get:
+
+\begin{align*}
+I \ddot \theta + b \dot \theta = \tau \\
+I \dot \bx_2 + b \dot \bx_1 = \tau
+\end{align*}
+
+Where \(b\) is the damping term. However, this can be assumed to be 0 in an inertial frame of reference (not true? only in space?), such as with a satellite in space. For the RCS system, this term is also close to or equal to 0. Solving for \(\dot \bx_2\) we get:
+
+\[
+\dot \bx_2 = \frac{\tau}{I} - \frac{b}{I} \cdot \dot \bx_1
+\]
+
+
+With this, we can generally define \(\bx\), as seen in \cref{eq:xab}, using the matrices \(A\) and \(B\):
+
+
+\begin{align*}
+	A  = \begin{bmatrix}
+		0 & 1 \\ 0 & -\tfrac{b}{I}
+	\end{bmatrix} 
+	\quad
+	B = \begin{bmatrix}
+		0 \\ \tfrac{1}{I} % use dfrac if the fractions ened to be larger
+	\end{bmatrix}
+\end{align*}
+
+Keeping in mind that \(\dot \bx_1 = \bx_2\), and \(\tau\) is equal to our control input \(u\), therefore allowing for the trivial definition of the first matrix rows. We end up with the full equation:
+
+\begin{equation}
+	\begin{bmatrix}
+		\dot{x}_1 \\
+		\dot{x}_2
+	\end{bmatrix}
+	=
+	\underbrace{\begin{bmatrix}
+			0 & 1 \\
+			0 & -\tfrac{b}{I}
+	\end{bmatrix}}_{A}
+	\begin{bmatrix}
+		x_1 \\
+		x_2
+	\end{bmatrix}
+	+
+	\underbrace{\begin{bmatrix}
+			0 \\
+			\tfrac{1}{I}
+	\end{bmatrix}}_{B}
+	u
+\end{equation}
+
+
+\end{document}

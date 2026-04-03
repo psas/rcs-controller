@@ -1,0 +1,101 @@
+#include <Wire.h>
+#include <Adafruit_LSM6DSOX.h>
+#include <MadgwickAHRS.h>
+
+// Initialize IMU and Madgwick filter
+Adafruit_LSM6DSOX lsm6ds;
+Madgwick filter;
+float gyroX, gyroY, gyroZ, accelX, accelY, accelZ, magX, magY, magZ;
+float roll, pitch, yaw, gyro_bias = 0;
+const float sensorRate = 104.0; // IMU sample rate in Hz (adjust based on your IMU)
+const bool useMagnetometer = false; // Set to true if using a 9-DoF IMU with magnetometer
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial) delay(10); // Wait for Serial to initialize
+
+  // Initialize IMU
+  if (!lsm6ds.begin_I2C()) {
+    Serial.println("Failed to find LSM6DSOX chip");
+    while (1) delay(10);
+  }
+  Serial.println("LSM6DSOX initialized successfully");
+
+  // Configure IMU settings (adjust as needed)
+  lsm6ds.setAccelRange(LSM6DS_ACCEL_RANGE_4_G);
+  lsm6ds.setGyroRange(LSM6DS_GYRO_RANGE_500_DPS);
+  lsm6ds.setAccelDataRate(LSM6DS_RATE_104_HZ);
+  lsm6ds.setGyroDataRate(LSM6DS_RATE_104_HZ);
+
+  
+  Serial.println("IMU SETTLING IN PROGRESS"); // The IMU apparently requires a few seconds to "settle" to its true bias values. Do this before sampling.
+  delay(1000);
+  Serial.println("SAMPLING BIAS --- ENSURE DEVICE IS ABSOLUTELY STATIONARY");
+  sensors_event_t accel, gyro, temp;
+  const int samples = 250;
+  float sum = 0;
+  for (int i = 0; i < samples; i++) {
+      lsm6ds.getEvent(&accel, &gyro, &temp);
+      sum += gyro.gyro.z;
+      delay(5);
+  }
+  gyro_bias = sum / samples;
+  Serial.print("Gyro bias: ");
+  Serial.println(gyro_bias, 6);
+
+  // Initialize Madgwick filter
+  filter.begin(sensorRate);
+}
+
+void loop() {
+  // Get IMU data
+  static sensors_event_t accel, gyro, temp;
+  lsm6ds.getEvent(&accel, &gyro, &temp);
+
+  // Convert to units expected by Madgwick (accel: g, gyro: deg/s)
+  accelX = accel.acceleration.x / 9.81; // Convert m/s^2 to g
+  accelY = accel.acceleration.y / 9.81;
+  accelZ = accel.acceleration.z / 9.81;
+  gyroX = gyro.gyro.x * 180.0 / PI; // Convert rad/s to deg/s
+  gyroY = gyro.gyro.y * 180.0 / PI;
+  gyroZ = (gyro.gyro.z - gyro_bias) * 180.0 / PI;
+
+  // If using magnetometer, add calibration and data here
+  if (useMagnetometer) {
+    // Example: magX, magY, magZ in gauss or uT (calibrated)
+    // Replace with actual magnetometer readings
+    magX = 0.0; magY = 0.0; magZ = 0.0;
+    filter.update(gyroX, gyroY, gyroZ, accelX, accelY, accelZ, magX, magY, magZ);
+  } else {
+    filter.updateIMU(gyroX, gyroY, gyroZ, accelX, accelY, accelZ);
+  }
+
+  // Get Euler angles
+  roll = filter.getRoll();
+  pitch = filter.getPitch();
+  yaw = filter.getYaw();
+
+  // Print heading (yaw in degrees, 0-360)
+  Serial.print("Heading: ");
+  Serial.print(yaw);
+  Serial.println(" degrees");
+
+  delay(1000 / sensorRate); // Match the sensor rate
+
+
+  // static sensors_event_t accel, gyro, temp;
+  // static unsigned long current_time, last_time; // times
+  // static float heading = 0, dt_heading; // variables for heading calculation
+
+  // // get current angular acceleration and update heading
+  // lsm6ds.getEvent(&accel, &gyro, &temp); // get angular velocity
+  // current_time = micros(); // current time
+  // dt_heading = (current_time - last_time)/1e6; // delta-t since last update, represented in seconds
+  // heading += dt_heading * ((gyro.gyro.z - gyro_bias) * 180/PI); // calculate new heading based on angular velocity and time since last read, converting from radians to degrees in same line CHECK WHICH AXIS WE NEED
+  // last_time = current_time; // set time for next loop 
+
+  // Serial.print("Heading: ");
+  // Serial.print(heading);
+  // Serial.println(" degrees");  
+
+}
