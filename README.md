@@ -1,7 +1,8 @@
-# rcs-controller-hardware
+# RCS Controller (Hardware and Firmware)
 The controller PCB for the RCS v2 module
 
 Design documentation can be found [here](https://docs.google.com/document/d/1iXMG_Qmra7nCvFc8n4LBztUYELcxyuHCIxhkm7w4VaU/edit?usp=sharing).
+
 ## LICENSE
 
 Copyright the Portland State Aerospace Society, 2025.
