@@ -810,7 +810,7 @@
         "uuid": "e4913927-a78d-4b03-b6f9-d80e0534b5c4"
       }
     ],
-    "used_designators": "R32,#VBUS106,Q6,C24,D12-13,#PWR11,#PWR13,#PWR39,#PWR50,#PWR66",
+    "used_designators": "#PWR11,#PWR13",
     "variants": []
   },
   "sheets": [
