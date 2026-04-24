@@ -2779,6 +2779,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+BATT"
 			(power global)
 			(pin_numbers
@@ -3457,6 +3596,26 @@
 		)
 		(uuid "02ee4d64-2936-4e11-9d2b-26da9d949f6a")
 	)
+	(text "From USB"
+		(exclude_from_sim no)
+		(at 181.864 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0c4f8ce9-8679-448c-a069-1d837c88d238")
+	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 211.328 121.666 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0fbe9e24-53c5-47d6-a1d7-829b00e8251c")
+	)
 	(text "DO NOT SHORT TO AIRFRAME!"
 		(exclude_from_sim no)
 		(at 71.755 96.52 0)
@@ -3555,6 +3714,37 @@
 		)
 		(uuid "331934f1-a608-44b6-8451-7bbec64711df")
 	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 277.368 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "51b4c8a1-4d61-4782-8d25-20435a5d1c8f")
+	)
+	(text "(9.0, 11.1, 12.6 V)"
+		(exclude_from_sim no)
+		(at 196.088 194.818 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a1b6420-e444-41da-a059-47266def9be0")
+	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 185.928 216.916 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6ca7fc7b-a888-4f27-8bca-4bdb24eebec6")
+	)
 	(text "+BATT (9.0, 11.1, 12.6 V)"
 		(exclude_from_sim no)
 		(at 311.15 125.73 0)
@@ -3610,6 +3800,36 @@
 		)
 		(uuid "b6881f31-3062-43b6-afdc-feea00df1a38")
 	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 287.528 216.916 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bf74c250-2dc9-4391-9ca1-bac573d16324")
+	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 246.38 118.618 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c6a3ec33-b4ca-4acb-90ff-ecc295e2d104")
+	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 196.596 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cfcbb6cb-bd13-423d-90eb-23d1ca1f18d6")
+	)
 	(text "3.3v Reference Output"
 		(exclude_from_sim no)
 		(at 198.755 130.175 0)
@@ -3632,11 +3852,27 @@
 		)
 		(uuid "e93706b6-1a65-4814-88c9-457ccbaac3c7")
 	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 297.434 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f0389099-c3cc-4269-a497-0543ea9b6e65")
+	)
 	(junction
 		(at 209.55 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "013b4a8d-c7f4-4acb-a92d-03f67cdc1fca")
+	)
+	(junction
+		(at 205.74 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07973a65-21fe-4f6b-83f5-5a5225c1112d")
 	)
 	(junction
 		(at 204.47 130.81)
@@ -3661,12 +3897,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ffcb3bd-1070-4bb3-8c06-760bd4be0e2d")
-	)
-	(junction
-		(at 201.93 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a88335a-77db-44bb-a9db-1f5db033009e")
 	)
 	(junction
 		(at 308.61 138.43)
@@ -3907,6 +4137,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f580f817-4f23-4417-a047-7306b74864fb")
+	)
+	(junction
+		(at 181.61 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7b5845f-9c26-4d3c-ab6d-8b7c06b1b216")
 	)
 	(junction
 		(at 121.92 118.11)
@@ -4268,7 +4504,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 203.2) (xy 201.93 208.28)
+			(xy 205.74 199.39) (xy 205.74 208.28)
 		)
 		(stroke
 			(width 0)
@@ -4808,7 +5044,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 208.28) (xy 191.77 208.28)
+			(xy 191.77 208.28) (xy 205.74 208.28)
 		)
 		(stroke
 			(width 0)
@@ -4835,6 +5071,16 @@
 			(type default)
 		)
 		(uuid "75de8ef7-d52e-4866-ac74-2e4d2becb4a1")
+	)
+	(wire
+		(pts
+			(xy 181.61 205.74) (xy 181.61 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "780f384e-200f-4a65-91d7-414b70994247")
 	)
 	(wire
 		(pts
@@ -5178,16 +5424,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 208.28) (xy 209.55 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a18f6b08-6849-4fd8-8d22-d5092e4b4dea")
-	)
-	(wire
-		(pts
 			(xy 204.47 173.99) (xy 204.47 176.53)
 		)
 		(stroke
@@ -5298,6 +5534,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 208.28) (xy 209.55 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4038b3a-53fe-4b80-9983-de3acdac0759")
+	)
+	(wire
+		(pts
 			(xy 303.53 128.27) (xy 303.53 130.81)
 		)
 		(stroke
@@ -5315,6 +5561,16 @@
 			(type default)
 		)
 		(uuid "b645425b-6cf4-4215-82ea-e0691fbd7d2e")
+	)
+	(wire
+		(pts
+			(xy 181.61 199.39) (xy 181.61 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8838c2b-a8cc-4d17-855b-37c5fd60bd37")
 	)
 	(wire
 		(pts
@@ -6181,6 +6437,83 @@
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 181.61 199.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04ad61f2-260c-4847-8c3a-2c77b2d291e6")
+		(property "Reference" "#PWR050"
+			(at 181.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 181.61 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 181.61 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d868138-f19c-43be-adfa-cbf3de8c2898")
+		)
+		(instances
+			(project "rcs-controller"
+				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -11690,6 +12023,152 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky_Small")
+		(at 181.61 203.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "771fe582-aa6e-43d2-acde-8c3c118c3938")
+		(property "Reference" "D13"
+			(at 184.15 202.1839 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RBR5L30BDDTE25"
+			(at 184.15 204.7239 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 181.61 203.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.rohm.com/datasheet?p=RBR5L30BDD&dist=Digi-key&media=referral&source=digi-key.com&campaign=Digi-key"
+			(at 181.61 203.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 30V 5A PMDS"
+			(at 181.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "846-RBR5L30BDDTE25CT-ND"
+			(at 181.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 181.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Rohm"
+			(at 181.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RBR5L30BDDTE25"
+			(at 181.61 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 181.61 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 181.61 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c26ab2d6-3164-4513-bb6e-0be5ee06e043")
+		)
+		(pin "2"
+			(uuid "ac793dce-3dd2-4a36-bf89-457af0964acb")
+		)
+		(instances
+			(project "rcs-controller"
+				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 351.79 88.9 0)
 		(unit 1)
@@ -11991,7 +12470,7 @@
 	)
 	(symbol
 		(lib_id "psas-power:VBUS")
-		(at 201.93 203.2 0)
+		(at 205.74 199.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11999,10 +12478,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7ec9bf85-15bc-4ab8-bbe0-bec960685027")
 		(property "Reference" "#VBUS0103"
-			(at 201.93 207.01 0)
+			(at 205.74 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12013,7 +12491,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 201.93 198.12 0)
+			(at 205.486 195.834 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12023,7 +12501,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 203.2 0)
+			(at 205.74 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12034,7 +12512,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 203.2 0)
+			(at 205.74 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12045,7 +12523,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 201.93 203.2 0)
+			(at 205.74 199.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
