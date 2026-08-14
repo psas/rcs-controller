@@ -758,7 +758,7 @@
         "uuid": "e4913927-a78d-4b03-b6f9-d80e0534b5c4"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J1-10,R1-35,#FLG1-7,L1-2,D1-12,#PWR1-65,C1-22,#VBUS1-5,Q1-5,SW1-2,TP1-13,U1-4",
     "variants": []
   },
   "sheets": [
