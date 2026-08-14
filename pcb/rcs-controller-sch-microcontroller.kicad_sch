@@ -5219,6 +5219,10 @@
 		(uuid "743e535f-8f28-4955-8d86-c91e51cbb8ac")
 	)
 	(no_connect
+		(at 181.61 128.27)
+		(uuid "75618fb8-cb18-4f39-9fc1-9f370e2e021a")
+	)
+	(no_connect
 		(at 181.61 143.51)
 		(uuid "822a3ede-e1c1-465f-ba23-a6fa5d638b09")
 	)
@@ -6964,7 +6968,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0234b164-53c5-4b7a-a308-10aad8c6e281")
-		(property "Reference" "R21"
+		(property "Reference" "R31"
 			(at 259.08 199.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7092,7 +7096,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R21")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -7109,7 +7113,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02606bc5-1e4b-4e6c-bce9-cc0079add96b")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR056"
 			(at 293.37 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7169,7 +7173,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR07")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -7187,7 +7191,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0337f71e-7204-4f92-80f8-44203c249e8f")
-		(property "Reference" "R22"
+		(property "Reference" "R26"
 			(at 241.3 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7315,7 +7319,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R22")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -7333,7 +7337,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05eeda21-cca7-4e30-bc6a-1bcc91bf299c")
-		(property "Reference" "R29"
+		(property "Reference" "R22"
 			(at 138.43 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7461,7 +7465,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R29")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -7479,7 +7483,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0dc3eaed-79e8-4176-a6f0-51bac3d042a5")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR057"
 			(at 295.91 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -7539,7 +7543,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR053")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7557,7 +7561,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e3a9b57-1185-40d6-94c3-bd1b01d91f8a")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR047"
 			(at 250.19 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7617,7 +7621,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR063")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -7636,7 +7640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f556114-2d92-46cd-a3f5-5aed49db46d4")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR052"
 			(at 265.43 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7696,7 +7700,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR01")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -7714,7 +7718,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10f1bd55-1c6b-45d0-8e18-f2b7caa9df14")
-		(property "Reference" "R25"
+		(property "Reference" "R34"
 			(at 307.34 213.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7842,7 +7846,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R25")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -7859,7 +7863,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "151843fb-eecc-4fba-844f-a5016a58bd5c")
-		(property "Reference" "#VBUS0104"
+		(property "Reference" "#VBUS04"
 			(at 271.78 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -7919,7 +7923,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#VBUS0104")
+					(reference "#VBUS04")
 					(unit 1)
 				)
 			)
@@ -7937,7 +7941,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17437a27-52c2-4ff0-b06d-8e8bfa375eb5")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR049"
 			(at 250.19 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7997,7 +8001,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR065")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -8015,7 +8019,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "203d8cd5-1309-495a-802a-7e163ecfd47d")
-		(property "Reference" "C22"
+		(property "Reference" "C17"
 			(at 247.65 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8143,7 +8147,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C22")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -8161,7 +8165,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21358868-a824-4295-93f1-23d85bda9fe1")
-		(property "Reference" "R8"
+		(property "Reference" "R27"
 			(at 241.3 218.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8289,7 +8293,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R8")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -8306,7 +8310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21893f29-bbe7-445c-bfe9-c0b43557ca54")
-		(property "Reference" "J11"
+		(property "Reference" "J10"
 			(at 313.69 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8317,7 +8321,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "0022232031"
 			(at 313.69 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8350,7 +8354,51 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 3POS 2.54MM HIGH PRESSURE"
+			(at 317.5 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "WM4201-ND"
+			(at 317.5 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 317.5 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Molex"
+			(at 317.5 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22232031"
 			(at 317.5 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8373,7 +8421,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "J11")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -8391,7 +8439,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "246f2f02-c968-43dd-815c-221dff260d67")
-		(property "Reference" "C17"
+		(property "Reference" "C20"
 			(at 264.16 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8519,7 +8567,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C17")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -8536,7 +8584,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a397aff-2bb7-4d62-ac10-57d0655a260b")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR032"
 			(at 80.01 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -8596,7 +8644,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR060")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -8614,7 +8662,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d338c51-29ac-423c-95e8-4e2f75401eea")
-		(property "Reference" "C21"
+		(property "Reference" "C16"
 			(at 76.2 143.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8742,7 +8790,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C21")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -8760,7 +8808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e84c939-cca4-41a7-a315-b35c6452c21e")
-		(property "Reference" "D3"
+		(property "Reference" "D12"
 			(at 313.69 175.2599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8868,7 +8916,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "D3")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -8886,7 +8934,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2feb9510-2b73-4126-b34e-bbdff9719607")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR048"
 			(at 250.19 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -8946,7 +8994,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR064")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -8963,7 +9011,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "336a4df7-2816-492c-9d8f-0691bc1b64b6")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR036"
 			(at 140.97 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -9023,7 +9071,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR059")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -9040,7 +9088,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40ba96fd-48a2-4ba6-b269-78f4f06e10d7")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR055"
 			(at 271.78 226.06 0)
 			(hide yes)
 			(show_name no)
@@ -9100,7 +9148,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR042")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -9117,7 +9165,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "42c72830-0b0a-4928-9cce-0c8c81d2d2cf")
-		(property "Reference" "TP33"
+		(property "Reference" "TP13"
 			(at 240.03 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9231,7 +9279,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "TP33")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -9249,7 +9297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48ccb0fd-e643-4459-afdb-87321c9945ae")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG07"
 			(at 181.61 104.775 0)
 			(hide yes)
 			(show_name no)
@@ -9309,7 +9357,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#FLG03")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -9350,7 +9398,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 294.894 136.144 90)
 			(hide yes)
 			(show_name no)
@@ -9372,7 +9420,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 295.91 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "311-10.0KHRCT-ND"
+			(at 295.91 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 295.91 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Yageo"
+			(at 295.91 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
 			(at 295.91 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -9411,7 +9503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c8b576f-ada2-4c99-9108-d941ec3131e5")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR058"
 			(at 295.91 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -9471,7 +9563,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR068")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -9488,7 +9580,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "52c301dd-3a16-4386-b726-f3aa637ff733")
-		(property "Reference" "D11"
+		(property "Reference" "D9"
 			(at 275.59 170.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9614,7 +9706,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "D11")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -9631,7 +9723,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "545b3a23-9a34-4134-a326-de3cace7aa41")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR045"
 			(at 243.84 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -9691,7 +9783,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR040")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -9708,7 +9800,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "562b8c5c-a0c9-4538-9fc9-8effbb458ff4")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR063"
 			(at 313.69 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9768,7 +9860,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR049")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -9785,7 +9877,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "562feef3-600c-47ba-a313-d2a1da3aca0f")
-		(property "Reference" "Q4"
+		(property "Reference" "Q3"
 			(at 248.92 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9918,7 +10010,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "Q4")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -9935,7 +10027,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "56711ee7-de93-4c08-9448-d761db504438")
-		(property "Reference" "U1"
+		(property "Reference" "U4"
 			(at 315.8333 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10102,7 +10194,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "U1")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -10119,7 +10211,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5777f04f-f1c7-4a59-ad36-1ad799dc0a9e")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR054"
 			(at 271.78 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -10179,7 +10271,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR045")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -10196,7 +10288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "579791ad-c1bc-4a45-aee8-abf1f4670fdb")
-		(property "Reference" "#VBUS0105"
+		(property "Reference" "#VBUS03"
 			(at 271.78 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10256,7 +10348,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#VBUS0105")
+					(reference "#VBUS03")
 					(unit 1)
 				)
 			)
@@ -10274,7 +10366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c231f13-39f9-421f-b724-411082c7c0ff")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR059"
 			(at 304.8 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -10334,7 +10426,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR048")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -10351,7 +10443,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d9ea3c5-07ec-4d07-94b0-2954e12f5fa7")
-		(property "Reference" "J4"
+		(property "Reference" "J9"
 			(at 303.53 199.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10487,7 +10579,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "J4")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -10505,7 +10597,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "632bee5c-c988-4c29-99ec-cf76e4e2a329")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 262.89 168.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10633,7 +10725,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -10651,7 +10743,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6364ec76-94e4-4827-a82a-2751465b7b94")
-		(property "Reference" "R23"
+		(property "Reference" "R30"
 			(at 257.81 153.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10779,7 +10871,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R23")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -10796,7 +10888,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66f7f50a-b772-4a2b-bd06-f31fcc74f1cf")
-		(property "Reference" "TP34"
+		(property "Reference" "TP12"
 			(at 223.52 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10910,7 +11002,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "TP34")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -11042,7 +11134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7239d71c-774c-4a2e-8784-4c9ee93bc3d0")
-		(property "Reference" "Q2"
+		(property "Reference" "Q5"
 			(at 275.59 203.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11182,7 +11274,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "Q2")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -11200,7 +11292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "730a94ee-87b7-4bcd-bce4-a73e74a0c457")
-		(property "Reference" "R7"
+		(property "Reference" "R24"
 			(at 231.14 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11210,7 +11302,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7"
+		(property "Value" "4.7k"
 			(at 231.14 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11242,8 +11334,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "RES 4.7K OHM 1% 1/10W 0603"
 			(at 231.14 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "311-4.70KHRCT-ND"
+			(at 231.14 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 231.14 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Yageo"
+			(at 231.14 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-074K7L"
+			(at 231.14 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11262,7 +11398,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R7")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -11279,7 +11415,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "74574ef2-9af0-4889-b2fd-86543dae12d9")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR062"
 			(at 311.15 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -11339,7 +11475,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR046")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -11356,7 +11492,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75a3d7fe-851e-4c59-8d16-7479d6eebfc1")
-		(property "Reference" "R31"
+		(property "Reference" "R29"
 			(at 245.11 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11484,7 +11620,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R31")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -11502,7 +11638,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7893cc02-6390-4e58-bb87-68fa6eec4b68")
-		(property "Reference" "C23"
+		(property "Reference" "C18"
 			(at 247.65 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11630,7 +11766,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C23")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -11648,7 +11784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "796eeae7-b997-4b42-a315-938c43f46449")
-		(property "Reference" "J6"
+		(property "Reference" "J7"
 			(at 172.72 91.4399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11659,7 +11795,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "0022232031"
 			(at 172.72 93.9799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11670,7 +11806,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical"
 			(at 167.64 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11692,8 +11828,52 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 3POS 2.54MM HIGH PRESSURE"
 			(at 167.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "WM4201-ND"
+			(at 167.64 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 167.64 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Molex"
+			(at 167.64 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22232031"
+			(at 167.64 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11715,7 +11895,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "J6")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -11732,7 +11912,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8320863d-9ac3-4e3f-8129-7362f9d74660")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR051"
 			(at 252.73 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -11792,7 +11972,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR041")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -11809,7 +11989,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bbf1d84-2f22-4fa8-9800-3f0841c49cc5")
-		(property "Reference" "R30"
+		(property "Reference" "R28"
 			(at 245.11 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11937,7 +12117,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R30")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -12000,7 +12180,51 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "RES 15K OHM 5% 1/10W 0603"
+			(at 295.91 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "311-15KGRCT-ND"
+			(at 295.91 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 295.91 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Yageo"
+			(at 295.91 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603JR-0715KL"
 			(at 295.91 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -12039,7 +12263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "939b784c-fb23-45b1-96fe-770e781969c1")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR060"
 			(at 309.88 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12099,7 +12323,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR067")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -12118,7 +12342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97156706-ff4c-42d1-8242-33022cd6398b")
-		(property "Reference" "Q3"
+		(property "Reference" "Q4"
 			(at 275.59 158.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12258,7 +12482,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "Q3")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -12276,7 +12500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a04ac1b7-514d-401e-ab04-98cf57a13c98")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR034"
 			(at 109.22 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12336,7 +12560,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR011")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -12354,7 +12578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5f128a7-a27b-4434-aa51-0656ccaec0aa")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR064"
 			(at 313.69 127 0)
 			(hide yes)
 			(show_name no)
@@ -12414,7 +12638,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR052")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -12432,7 +12656,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a670323a-fa7b-4f72-8068-62f4b58b6365")
-		(property "Reference" "R24"
+		(property "Reference" "R35"
 			(at 308.61 168.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12560,7 +12784,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R24")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -12577,7 +12801,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9233cf6-3e01-4625-9ea4-5ba6e60a5207")
-		(property "Reference" "R26"
+		(property "Reference" "R25"
 			(at 241.3 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12705,7 +12929,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R26")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -12722,7 +12946,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa876894-928f-4cb2-b997-6146e49bbc53")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR041"
 			(at 229.87 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12782,7 +13006,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR056")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -12800,7 +13024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aaf07222-31b4-4bd0-9e6a-0ba51aa41327")
-		(property "Reference" "D6"
+		(property "Reference" "D11"
 			(at 312.42 219.6464 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12908,7 +13132,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "D6")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -12925,7 +13149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab9b2d4d-ee0d-414b-b2c5-aadb61a6c922")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR033"
 			(at 87.63 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12985,7 +13209,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR061")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -13002,7 +13226,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b191b929-b9c1-462d-879b-01884e58b203")
-		(property "Reference" "Q5"
+		(property "Reference" "Q2"
 			(at 247.65 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13135,7 +13359,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "Q5")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -13266,7 +13490,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b61a19b9-e65a-497a-9843-68fb2937c565")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 177.8 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13491,7 +13715,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -13510,7 +13734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b79466e7-1678-4f99-b7e4-8101bb928eb0")
-		(property "Reference" "#VBUS0102"
+		(property "Reference" "#VBUS05"
 			(at 309.88 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -13570,7 +13794,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#VBUS0102")
+					(reference "#VBUS05")
 					(unit 1)
 				)
 			)
@@ -13588,7 +13812,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8be32dc-3419-4a8a-b413-7a6a8e689214")
-		(property "Reference" "C20"
+		(property "Reference" "C22"
 			(at 323.85 80.0162 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13716,7 +13940,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C20")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -13733,7 +13957,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bdf176f9-5489-4da5-b32f-6c727d172a3f")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR042"
 			(at 238.76 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -13793,7 +14017,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR055")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -13811,7 +14035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c145969c-ab5c-4f84-b886-0f2ed87a2850")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR043"
 			(at 243.84 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -13871,7 +14095,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR010")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -13889,7 +14113,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c3b7ba10-9467-457f-bff4-16e80851533c")
-		(property "Reference" "C19"
+		(property "Reference" "C21"
 			(at 302.26 80.0162 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14017,7 +14241,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "C19")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -14034,7 +14258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4ce1c9c-f85f-48eb-a91e-606bbb772126")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR061"
 			(at 309.88 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -14094,7 +14318,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR047")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -14112,7 +14336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c66a5956-adb2-4d12-874a-fe6b06c59eab")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR040"
 			(at 196.85 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -14172,7 +14396,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR057")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -14189,7 +14413,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "caca2ca8-a903-4371-98c0-3a90870c84d8")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR050"
 			(at 252.73 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -14249,7 +14473,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR044")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -14268,7 +14492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cee572f2-a6da-43f8-8fc2-eb8a670957ae")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR039"
 			(at 195.58 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14328,7 +14552,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR066")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -14345,7 +14569,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d11f1c17-a659-4f2e-875f-e9e05ab7285f")
-		(property "Reference" "J9"
+		(property "Reference" "J8"
 			(at 201.93 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14356,7 +14580,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "0022232031"
 			(at 199.39 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14389,7 +14613,51 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 3POS 2.54MM HIGH PRESSURE"
+			(at 203.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "WM4201-ND"
+			(at 203.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 203.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Molex"
+			(at 203.2 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "22232031"
 			(at 203.2 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -14412,7 +14680,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "J9")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -14430,7 +14698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3acb673-faa1-453e-9f2d-e7d58b6f5bb4")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG06"
 			(at 118.11 99.695 0)
 			(hide yes)
 			(show_name no)
@@ -14490,7 +14758,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#FLG02")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -14507,7 +14775,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d675449e-bed5-499e-83c6-6221dbfaaf6e")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR035"
 			(at 130.81 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -14567,7 +14835,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR058")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -14584,7 +14852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8b5ac50-20ce-40b4-9d39-078ee735f430")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR044"
 			(at 243.84 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -14644,7 +14912,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR043")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -14662,7 +14930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e11191b5-df7b-4ef8-a841-da62357c391b")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR037"
 			(at 170.18 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -14722,7 +14990,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR062")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -14740,7 +15008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3b3de29-2432-4193-84bf-c621a38504d0")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR038"
 			(at 194.31 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -14800,7 +15068,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR013")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -14818,7 +15086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e49800b2-8b5f-4d24-8162-6b8ebf898366")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 87.63 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14962,7 +15230,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -14980,7 +15248,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e657d1c7-be58-4e32-b9d8-4f9b82febeb5")
-		(property "Reference" "R28"
+		(property "Reference" "R21"
 			(at 128.27 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15108,7 +15376,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R28")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -15269,7 +15537,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed84a30c-9b16-4deb-8bc5-e59365320c2d")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR065"
 			(at 326.39 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -15329,7 +15597,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR051")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -15348,7 +15616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f27201f7-a650-4b57-8f02-c207f03697a6")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR053"
 			(at 265.43 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15408,7 +15676,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR09")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -15426,7 +15694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5f697d9-02a8-4b45-8398-2c0f6cf31f65")
-		(property "Reference" "R27"
+		(property "Reference" "R23"
 			(at 227.33 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15554,7 +15822,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "R27")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -15614,7 +15882,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode, small symbol, filled shape"
+		(property "Description" "LED RED CLEAR 0603 SMD"
 			(at 241.3 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -15626,6 +15894,50 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 241.3 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "732-4979-1-ND"
+			(at 241.3 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 241.3 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Wurth"
+			(at 241.3 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "150060SS75000"
 			(at 241.3 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -15663,7 +15975,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa275600-1782-49e5-b272-7f124077dea0")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR046"
 			(at 250.19 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -15723,7 +16035,7 @@
 		(instances
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/b4a0c417-3b67-4300-bf70-1e43e04bd22a"
-					(reference "#PWR054")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
