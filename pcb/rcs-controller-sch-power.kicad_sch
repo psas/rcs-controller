@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "RCS Controller Board")
-		(date "2025-03-25")
-		(rev "1.0")
+		(date "2026-11-22")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -3716,7 +3716,17 @@
 	)
 	(text "0805"
 		(exclude_from_sim no)
-		(at 277.368 217.17 0)
+		(at 271.018 217.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "455ae0eb-b65d-43d4-a483-76109fd45491")
+	)
+	(text "0805"
+		(exclude_from_sim no)
+		(at 281.178 217.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3802,7 +3812,7 @@
 	)
 	(text "0805"
 		(exclude_from_sim no)
-		(at 287.528 216.916 0)
+		(at 290.068 216.916 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3965,12 +3975,6 @@
 		(uuid "596d7c17-aa70-43fe-bfa4-2967426baa86")
 	)
 	(junction
-		(at 273.05 208.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c0b90dd-6357-406d-9a8c-05ce8faa3994")
-	)
-	(junction
 		(at 275.59 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3989,10 +3993,10 @@
 		(uuid "6fbd2bf1-83ac-4955-91bb-fbf4b71fe425")
 	)
 	(junction
-		(at 283.21 208.28)
+		(at 285.75 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7d547a54-d95e-4df6-a77f-5e7df3b145b1")
+		(uuid "7bd73fed-b11e-46ee-87fd-4c288b425a6b")
 	)
 	(junction
 		(at 97.79 115.57)
@@ -4067,6 +4071,12 @@
 		(uuid "c56647c4-63c0-42a4-baf7-549fed7dcbb8")
 	)
 	(junction
+		(at 276.86 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6da63bc-22d2-411d-b0cc-61f56f29fa91")
+	)
+	(junction
 		(at 214.63 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4089,6 +4099,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6d9f06f-2c1b-4cc6-81dd-e0e9220c7611")
+	)
+	(junction
+		(at 266.7 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e08514c7-8818-4603-9250-2d8144e30734")
 	)
 	(junction
 		(at 165.1 120.65)
@@ -4204,6 +4220,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 208.28) (xy 276.86 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06513247-151b-4a5f-877b-7af316123427")
+	)
+	(wire
+		(pts
 			(xy 247.65 195.58) (xy 247.65 205.74)
 		)
 		(stroke
@@ -4311,6 +4337,16 @@
 			(type default)
 		)
 		(uuid "0e0c254f-362f-4e1b-8586-a71f1083e01e")
+	)
+	(wire
+		(pts
+			(xy 262.89 208.28) (xy 266.7 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eba960b-045a-40a0-9f10-25af9cb5330b")
 	)
 	(wire
 		(pts
@@ -4611,6 +4647,16 @@
 			(type default)
 		)
 		(uuid "2ebb119b-87d7-4197-9e41-730b26ef1695")
+	)
+	(wire
+		(pts
+			(xy 276.86 208.28) (xy 285.75 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f448913-b2b8-486c-b46e-ef66c873e14b")
 	)
 	(wire
 		(pts
@@ -4954,16 +5000,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 208.28) (xy 262.89 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62ca780f-bfbc-46cb-9ddb-f184dde2e07e")
-	)
-	(wire
-		(pts
 			(xy 191.77 215.9) (xy 191.77 218.44)
 		)
 		(stroke
@@ -5024,16 +5060,6 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 208.28) (xy 295.91 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dedc2e4-e43c-4edc-b71b-ee3902b666d4")
-	)
-	(wire
-		(pts
 			(xy 214.63 233.68) (xy 214.63 231.14)
 		)
 		(stroke
@@ -5054,7 +5080,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 210.82) (xy 273.05 208.28)
+			(xy 276.86 210.82) (xy 276.86 208.28)
 		)
 		(stroke
 			(width 0)
@@ -5134,7 +5160,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 215.9) (xy 295.91 218.44)
+			(xy 298.45 215.9) (xy 298.45 218.44)
 		)
 		(stroke
 			(width 0)
@@ -5184,7 +5210,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 210.82) (xy 283.21 208.28)
+			(xy 285.75 210.82) (xy 285.75 208.28)
 		)
 		(stroke
 			(width 0)
@@ -5351,6 +5377,16 @@
 			(type default)
 		)
 		(uuid "98662823-3231-4a1a-a991-3c4637c20687")
+	)
+	(wire
+		(pts
+			(xy 285.75 208.28) (xy 298.45 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99f86109-6dfb-4f66-966f-a8755934de4f")
 	)
 	(wire
 		(pts
@@ -5604,7 +5640,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 215.9) (xy 273.05 218.44)
+			(xy 276.86 215.9) (xy 276.86 218.44)
 		)
 		(stroke
 			(width 0)
@@ -5644,7 +5680,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 223.52) (xy 295.91 226.06)
+			(xy 298.45 223.52) (xy 298.45 226.06)
 		)
 		(stroke
 			(width 0)
@@ -5804,7 +5840,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 208.28) (xy 295.91 210.82)
+			(xy 298.45 208.28) (xy 298.45 210.82)
 		)
 		(stroke
 			(width 0)
@@ -5834,6 +5870,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 210.82) (xy 266.7 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd7cfc41-10df-4bf2-ae35-dd6af3465a04")
+	)
+	(wire
+		(pts
 			(xy 88.9 143.51) (xy 102.87 143.51)
 		)
 		(stroke
@@ -5841,16 +5887,6 @@
 			(type default)
 		)
 		(uuid "df68f2df-439c-4471-b272-f65dad9f0cd6")
-	)
-	(wire
-		(pts
-			(xy 283.21 208.28) (xy 273.05 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df7a6219-b387-4c77-88c3-d25feab3da0b")
 	)
 	(wire
 		(pts
@@ -6004,7 +6040,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 215.9) (xy 283.21 218.44)
+			(xy 285.75 215.9) (xy 285.75 218.44)
 		)
 		(stroke
 			(width 0)
@@ -6041,6 +6077,16 @@
 			(type default)
 		)
 		(uuid "f84e4dee-41d4-47de-8e91-ef54443953b6")
+	)
+	(wire
+		(pts
+			(xy 266.7 215.9) (xy 266.7 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9002ae5-9569-41ba-b49a-de3670d99d4f")
 	)
 	(wire
 		(pts
@@ -6263,7 +6309,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B222KB8WPN.do"
 			(at 273.05 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -6514,6 +6560,151 @@
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 266.7 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a301bef-e6ed-4c7c-9907-6981578a420f")
+		(property "Reference" "C23"
+			(at 269.24 212.0962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 269.24 214.6362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 22UF 35V X5R 0805"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C2012X5R1V226M125AC"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DPN" "445-14428-1-ND"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DST" "DigiKey"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Murata"
+			(at 266.7 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 266.7 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 266.7 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60ce819e-4ed7-4f84-9bd0-bc57d5287e25")
+		)
+		(pin "2"
+			(uuid "14203b2c-34ff-4ee8-9596-a9492fe73f8e")
+		)
+		(instances
+			(project "rcs-controller"
+				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -7082,7 +7273,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 209.55 146.05 90)
 			(hide yes)
 			(show_name no)
@@ -7379,7 +7570,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 283.21 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7482,7 +7673,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 295.91 213.36 0)
+		(at 298.45 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7492,7 +7683,7 @@
 		(dnp no)
 		(uuid "25237ea3-55c7-40d3-a8ad-e20774c7bcf5")
 		(property "Reference" "R16"
-			(at 293.37 215.9 90)
+			(at 295.91 215.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7503,7 +7694,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 298.45 215.9 90)
+			(at 300.99 215.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7514,7 +7705,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7524,8 +7715,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 295.91 213.36 0)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7536,7 +7727,7 @@
 			)
 		)
 		(property "Description" "RES 4.7K OHM 1% 1/10W 0603"
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7547,7 +7738,7 @@
 			)
 		)
 		(property "DPN" "311-4.70KHRCT-ND"
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7558,7 +7749,7 @@
 			)
 		)
 		(property "DST" "DigiKey"
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7569,7 +7760,7 @@
 			)
 		)
 		(property "MFR" "Yageo"
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7580,7 +7771,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-074K7L"
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7591,7 +7782,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7601,7 +7792,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 295.91 213.36 0)
+			(at 298.45 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7835,7 +8026,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 295.91 226.06 0)
+		(at 298.45 226.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7846,7 +8037,7 @@
 		(fields_autoplaced yes)
 		(uuid "282250c1-7703-437e-a880-2762cf66bf84")
 		(property "Reference" "#PWR025"
-			(at 295.91 232.41 0)
+			(at 298.45 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7857,7 +8048,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.91 231.14 0)
+			(at 298.45 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7867,7 +8058,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 295.91 226.06 0)
+			(at 298.45 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7878,7 +8069,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 295.91 226.06 0)
+			(at 298.45 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7889,7 +8080,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 295.91 226.06 0)
+			(at 298.45 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8033,7 +8224,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 351.79 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -8290,7 +8481,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 283.21 218.44 0)
+		(at 285.75 218.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8301,7 +8492,7 @@
 		(fields_autoplaced yes)
 		(uuid "361216dd-b13c-4c5f-ae4b-f0a7137eec96")
 		(property "Reference" "#PWR023"
-			(at 283.21 224.79 0)
+			(at 285.75 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8312,7 +8503,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 283.21 223.52 0)
+			(at 285.75 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8322,7 +8513,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 283.21 218.44 0)
+			(at 285.75 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8333,7 +8524,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 283.21 218.44 0)
+			(at 285.75 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8344,7 +8535,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 283.21 218.44 0)
+			(at 285.75 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8488,7 +8679,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 321.31 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8634,7 +8825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 252.73 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -8924,7 +9115,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 262.89 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -9201,7 +9392,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 204.47 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -9424,7 +9615,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 336.55 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9570,7 +9761,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 312.42 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9592,7 +9783,7 @@
 				)
 			)
 		)
-		(property "DPN" "1276-6854-1-ND"
+		(property "DPN" "399-6856-1-ND"
 			(at 312.42 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9614,7 +9805,7 @@
 				)
 			)
 		)
-		(property "MFR" "Samsung Microelectronics"
+		(property "MFR" "KEMET"
 			(at 312.42 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9625,7 +9816,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 312.42 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9715,7 +9906,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 181.61 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9991,7 +10182,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"
 			(at 293.37 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -10401,7 +10592,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 283.21 213.36 0)
+		(at 285.75 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10411,7 +10602,7 @@
 		(dnp no)
 		(uuid "58352c1e-630a-47f6-9549-0261e401a1b8")
 		(property "Reference" "C13"
-			(at 285.75 212.0962 0)
+			(at 288.29 212.0962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10422,7 +10613,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 285.75 214.6362 0)
+			(at 288.29 214.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10433,7 +10624,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10443,8 +10634,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 283.21 213.36 0)
+		(property "Datasheet" "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10455,7 +10646,7 @@
 			)
 		)
 		(property "Description" "CAP CER 22UF 35V X5R 0805"
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10466,7 +10657,7 @@
 			)
 		)
 		(property "MPN" "C2012X5R1V226M125AC"
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10477,7 +10668,7 @@
 			)
 		)
 		(property "DPN" "445-14428-1-ND"
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10488,7 +10679,7 @@
 			)
 		)
 		(property "DST" "DigiKey"
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10499,7 +10690,7 @@
 			)
 		)
 		(property "MFR" "Murata"
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10510,7 +10701,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10520,7 +10711,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 283.21 213.36 0)
+			(at 285.75 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10546,7 +10737,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small_Filled")
-		(at 295.91 220.98 270)
+		(at 298.45 220.98 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10557,7 +10748,7 @@
 		(dnp no)
 		(uuid "59b0e73f-0dc2-443b-853a-fa2ac4795806")
 		(property "Reference" "D6"
-			(at 293.37 220.98 0)
+			(at 295.91 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10567,7 +10758,7 @@
 			)
 		)
 		(property "Value" "GRN"
-			(at 298.45 220.98 0)
+			(at 300.99 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10577,7 +10768,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 295.91 220.98 90)
+			(at 298.45 220.98 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10587,8 +10778,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 295.91 220.98 90)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
+			(at 298.45 220.98 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10599,7 +10790,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol, filled shape"
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10610,7 +10801,7 @@
 			)
 		)
 		(property "DPN" "732-4971-1-ND"
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10621,7 +10812,7 @@
 			)
 		)
 		(property "DST" "DigiKey"
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10632,7 +10823,7 @@
 			)
 		)
 		(property "MFR" "Wurth"
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10643,7 +10834,7 @@
 			)
 		)
 		(property "MPN" "150060GS75000"
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10654,7 +10845,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10665,7 +10856,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10675,7 +10866,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 295.91 220.98 0)
+			(at 298.45 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10821,7 +11012,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 351.79 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -11370,7 +11561,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 273.05 213.36 0)
+		(at 276.86 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11380,7 +11571,7 @@
 		(dnp no)
 		(uuid "6c7cfcc6-7268-4d43-ba3c-9ad03b3929de")
 		(property "Reference" "C12"
-			(at 275.59 212.0962 0)
+			(at 279.4 212.0962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11391,7 +11582,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 275.59 214.6362 0)
+			(at 279.4 214.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11402,7 +11593,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11412,8 +11603,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 273.05 213.36 0)
+		(property "Datasheet" "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11424,7 +11615,7 @@
 			)
 		)
 		(property "Description" "CAP CER 22UF 35V X5R 0805"
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11435,7 +11626,7 @@
 			)
 		)
 		(property "MPN" "C2012X5R1V226M125AC"
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11446,7 +11637,7 @@
 			)
 		)
 		(property "DPN" "445-14428-1-ND"
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11457,7 +11648,7 @@
 			)
 		)
 		(property "DST" "DigiKey"
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11468,7 +11659,7 @@
 			)
 		)
 		(property "MFR" "Murata"
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11479,7 +11670,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11489,7 +11680,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 273.05 213.36 0)
+			(at 276.86 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11557,7 +11748,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"
 			(at 191.77 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -11778,7 +11969,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 214.63 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -11921,7 +12112,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 209.55 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -12589,7 +12780,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf"
 			(at 181.61 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -12956,7 +13147,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 204.47 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -13177,7 +13368,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 283.21 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -13400,7 +13591,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 237.49 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -14025,6 +14216,84 @@
 			(project "rcs-controller"
 				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
 					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 218.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9da9d7bb-01a9-4306-bb58-cac58f9d2e67")
+		(property "Reference" "#PWR066"
+			(at 266.7 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c2b8505-2149-474c-9603-6798a4a73106")
+		)
+		(instances
+			(project "rcs-controller"
+				(path "/e4913927-a78d-4b03-b6f9-d80e0534b5c4/6cef9d77-2691-49ce-bc97-b221873d37f8"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -14660,7 +14929,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -14682,7 +14951,7 @@
 				)
 			)
 		)
-		(property "DPN" "1276-6854-1-ND"
+		(property "DPN" "399-6856-1-ND"
 			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -14704,7 +14973,7 @@
 				)
 			)
 		)
-		(property "MFR" "Samsung Microelectronics"
+		(property "MFR" "KEMET"
 			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -14715,7 +14984,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 252.73 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -15012,7 +15281,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CSR_CSRN.pdf"
 			(at 280.67 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -15236,7 +15505,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 252.73 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -15382,7 +15651,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 194.31 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -15606,7 +15875,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10B222KB8WPN.do"
 			(at 262.89 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -15752,7 +16021,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 252.73 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -15774,7 +16043,7 @@
 				)
 			)
 		)
-		(property "DPN" "1276-6854-1-ND"
+		(property "DPN" "399-6856-1-ND"
 			(at 252.73 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -15796,7 +16065,7 @@
 				)
 			)
 		)
-		(property "MFR" "Samsung Microelectronics"
+		(property "MFR" "KEMET"
 			(at 252.73 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -15807,7 +16076,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 252.73 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -16042,7 +16311,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 336.55 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -16274,7 +16543,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/150060GS75000.pdf"
 			(at 209.55 140.97 90)
 			(hide yes)
 			(show_name no)
@@ -16896,7 +17165,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 273.05 218.44 0)
+		(at 276.86 218.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16907,7 +17176,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2193cd0-2c06-454c-945c-3705f3157a2b")
 		(property "Reference" "#PWR022"
-			(at 273.05 224.79 0)
+			(at 276.86 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16918,7 +17187,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 273.05 223.52 0)
+			(at 276.86 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16928,7 +17197,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 273.05 218.44 0)
+			(at 276.86 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16939,7 +17208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 218.44 0)
+			(at 276.86 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16950,7 +17219,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 273.05 218.44 0)
+			(at 276.86 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17278,7 +17547,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 199.39 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -17692,7 +17961,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.kemet.com/download/specsheet/C0603C104K5RACAUTO"
 			(at 214.63 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -17714,7 +17983,7 @@
 				)
 			)
 		)
-		(property "DPN" "1276-6854-1-ND"
+		(property "DPN" "399-6856-1-ND"
 			(at 214.63 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -17736,7 +18005,7 @@
 				)
 			)
 		)
-		(property "MFR" "Samsung Microelectronics"
+		(property "MFR" "KEMET"
 			(at 214.63 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -17747,7 +18016,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8WPNC"
+		(property "MPN" "C0603C104K5RACAUTO"
 			(at 214.63 236.22 0)
 			(hide yes)
 			(show_name no)
@@ -17915,7 +18184,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT21BC71E106KE13-01.pdf"
 			(at 207.01 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -18217,7 +18486,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 273.05 158.75 0)
 			(hide yes)
 			(show_name no)
